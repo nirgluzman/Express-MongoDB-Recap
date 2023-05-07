@@ -15,10 +15,10 @@ Content-Type: application/json
 
 {
     "author": "Mike",
-    "email": "mike1@gmail.com",
+    "email": "mike@gmail.com",
     "topic": "sports",
     "text" : "I am playing football",
-    "rating": 4
+    "rating": 3
 }
 
 ###
@@ -26,7 +26,11 @@ PATCH {{host}}/blog/6458175d73621e96887a7d34
 Content-Type: application/json
 
 {
-    "rating": 5
+    "rating": 2
 }
+
+###
+DELETE {{host}}/blog/645826948b823bac793b1a12
+
 
 
