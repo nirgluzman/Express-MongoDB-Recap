@@ -7,14 +7,17 @@ GET {{host}}
 GET {{host}}/blog 
 
 ###
+GET {{host}}/blog/Mike
+
+###
 POST {{host}}/blog 
 Content-Type: application/json
 
 {
     "author": "Mike",
-    "email": "mike@gmail.com",
-    "topic": "art",
-    "text" : "Music day",
+    "email": "mike1@gmail.com",
+    "topic": "sports",
+    "text" : "I am playing football",
     "rating": 4
 }
 
