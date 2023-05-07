@@ -21,3 +21,12 @@ Content-Type: application/json
     "rating": 4
 }
 
+###
+PATCH {{host}}/blog/6458175d73621e96887a7d34
+Content-Type: application/json
+
+{
+    "rating": 5
+}
+
+
