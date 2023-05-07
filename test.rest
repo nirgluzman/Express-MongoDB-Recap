@@ -1,0 +1,16 @@
+@host = http://localhost:8000
+
+###
+GET {{host}}
+
+###
+POST {{host}}/blog 
+Content-Type: application/json
+
+{
+    "author": "Robin",
+    "email": "robin@gmail.com",
+    "topic": "travel",
+    "text" : "I need a break",
+    "rating": 5
+}
