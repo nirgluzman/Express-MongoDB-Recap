@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
 const BlogSchema = new Schema({
@@ -11,18 +11,19 @@ const BlogSchema = new Schema({
     type: String,
     required: true,
     unique: true,
+    index: true,
     match: [
       /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-      "Please enter a valid email",
+      'Please enter a valid email',
     ],
   },
   topic: {
     type: String,
-    enum: ["travel", "sports", "art"],
+    enum: ['travel', 'sports', 'art'],
   },
   text: {
     type: String,
-    required: [true, "You should write something"],
+    required: [true, 'You should write something'],
   },
   rating: {
     type: Number,
@@ -32,4 +33,4 @@ const BlogSchema = new Schema({
   },
 });
 
-export default mongoose.model("Blog", BlogSchema);
+export default mongoose.model('Blog', BlogSchema);

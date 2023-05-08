@@ -7,7 +7,7 @@ GET {{host}}
 GET {{host}}/blog 
 
 ###
-GET {{host}}/blog/Mike
+GET {{host}}/blog/Joe
 
 ###
 POST {{host}}/blog 
@@ -16,13 +16,13 @@ Content-Type: application/json
 {
     "author": "Mike",
     "email": "mike@gmail.com",
-    "topic": "sports",
-    "text" : "I am playing football",
+    "topic": "art",
+    "text" : "I love painting",
     "rating": 3
 }
 
 ###
-PATCH {{host}}/blog/6458175d73621e96887a7d34
+PATCH {{host}}/blog/64591272c3b07e3517dd81b0
 Content-Type: application/json
 
 {
@@ -30,7 +30,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE {{host}}/blog/645826948b823bac793b1a12
+DELETE {{host}}/blog/64591272c3b07e3517dd81b0
 
 
 
